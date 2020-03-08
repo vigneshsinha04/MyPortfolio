@@ -49,7 +49,7 @@ def check_password(param = None):
 def scrape_web():
 	if request.method == 'POST':
 		try:
-			html_csv = webscraping.view_csv_in_html(int(request.form["filter"]))
+			html_csv = webscraping.view_csv_in_html()
 			return render_template('webscraping.html', text=html_csv)
 		except Exception as ex:
 			raise ex

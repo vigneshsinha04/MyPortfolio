@@ -17,22 +17,15 @@
             </div>
             <div class="description">
               <p>Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites. Web scraping software may access the World Wide Web directly using the Hypertext Transfer Protocol, or through a web browser. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. It is a form of copying, in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis.</p>
-              <p>For example, we want some set of data from a website for our use. As a programmer, we do not manually go and fetch the data. Instead we let our program do the job. I have developed such tool that fetches data from the famous website called <a href="https://www.imdb.com/list/ls002448041/" target="_blank">IMDB</a>, particularly the "1012 Movies you must see" section. As we all know that IMDB is a database for movies and TV shows. So, instead of me browsing the entire list of movies, I wanted a list of movies having ratings of more than my selection(for eg. 8). By using this tool, I can get it in seconds. This way, I will save a lot of time and avoid going through the website and filter movies manually. I have developed this tool in Python using BeautifulSoup.
+              <p>For example, we want some set of data from a website for our use. As a programmer, we do not manually go and fetch the data. Instead we let our program do the job. I have developed such tool that fetches data from the famous website called <a href="https://www.gamepedia.com/" target="_blank">Gamepedia</a>. Gamepedia is a website for Gaming related news and articles. So, instead of me browsing the entire list of game articles, I can get the necessary data I need from the website using web scraping. By using this tool, I can get it in seconds. This way, I will save a lot of time and avoid going through the website and select game articles manually to read. I have developed this tool in Python using BeautifulSoup.
               </p>
               
-              <p>In the selection below, please select an rating and you will get the result of all the movies and their respective IMDB links that have more ratings more than your selection.</p>
+              <p>In the selection below, please select an rating and you will get the result of all the articles their respective links and their authors.</p>
             </div>
-            <h2>Webscraping IMDB Website</h2>
+            <h2>Webscraping Gamepedia Website</h2>
             <form action="/web_scraping" method="post" class="reveal-content" id="web_scraping-form">              
               <div class="form-group">
-                <label for="filter">Filter by Rating:</label>
-                <select class="form-control filter-margin" id="filter" required placeholder="Filter by Rating" name="filter">
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-                <button type="submit" class=" btn btn-primary" id="filter-btn">Filter IMDB</button>
+                <button type="submit" class=" btn btn-primary" id="filter-btn">Scrape Gamepedia</button>
               </div> 
             </form>
             <div style="overflow-x:auto;">
