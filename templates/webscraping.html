@@ -17,23 +17,22 @@
             </div>
             <div class="description">
               <p>Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites. Web scraping software may access the World Wide Web directly using the Hypertext Transfer Protocol, or through a web browser. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. It is a form of copying, in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis.</p>
-              <p>For example, we want some set of data from a website for our use. As a programmer, we do not manually go and fetch the data. Instead we let our program do the job. I have developed such tool that fetches data from the website called <a href="https://news.ycombinator.com/" target="_blank">hackernews</a>. This website is dedicated for tech news from all over the world. So, I wanted to fetch only those news that have upvotes of more than 100. By using this tool, I can get it in seconds. This way, I will save a lot of time and avoid going through the website and filter news manually. I have developed this tool in Python using BeautifulSoup.
+              <p>For example, we want some set of data from a website for our use. As a programmer, we do not manually go and fetch the data. Instead we let our program do the job. I have developed such tool that fetches data from the famous website called <a href="https://www.imdb.com/list/ls002448041/" target="_blank">IMDB</a>, particularly the "1012 Movies you must see" section. As we all know that IMDB is a database for movies and TV shows. So, instead of me browsing the entire list of movies, I wanted a list of movies having ratings of more than my selection(for eg. 8). By using this tool, I can get it in seconds. This way, I will save a lot of time and avoid going through the website and filter movies manually. I have developed this tool in Python using BeautifulSoup.
               </p>
               
-              <p>In the selection below, please select an upvote count and you will get the result of all the articles and their links that have more than your upvote count.</p>
+              <p>In the selection below, please select an rating and you will get the result of all the movies and their respective IMDB links that have more ratings more than your selection.</p>
             </div>
-            <h2>Webscraping Hackernews Website</h2>
+            <h2>Webscraping IMDB Website</h2>
             <form action="/web_scraping" method="post" class="reveal-content" id="web_scraping-form">              
               <div class="form-group">
-                <label for="filter">Filter by Upvotes:</label>
-                <select class="form-control filter-margin" id="filter" required placeholder="Filter by Upvotes" name="filter">
-                  <option value="100">100</option>
-                  <option value="200">200</option>
-                  <option value="300">300</option>
-                  <option value="400">400</option>
-                  <option value="500">500</option>
+                <label for="filter">Filter by Rating:</label>
+                <select class="form-control filter-margin" id="filter" required placeholder="Filter by Rating" name="filter">
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
                 </select>
-                <button type="submit" class=" btn btn-primary" id="filter-btn">Filter Hackernews</button>
+                <button type="submit" class=" btn btn-primary" id="filter-btn">Filter IMDB</button>
               </div> 
             </form>
             <div style="overflow-x:auto;">
