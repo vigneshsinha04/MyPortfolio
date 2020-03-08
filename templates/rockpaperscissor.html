@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+{% block title %}Rock Paper Scissor{% endblock %}
+{% block content %}
+
+<body class="">
+ <div class="container" id="check-password">
+   <div class="row">    
+     <div class="col-xs-12 align-center">      
+        <div class="card" id="contact"> 
+        <h1>Rock Paper Scissor Game</h1>         
+          <div class="card-block pwd-padding">            
+            <div class="col-xs-12">
+              <img src="./static/assets/images/rock-paper-scissor.jpg" class="img-responsive auto-margin" alt="rock-paper-scissor">
+            </div>
+            <div class="description">
+              <p>Rock paper scissors is a hand game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. These shapes are "Rock" (a closed fist), "Paper" (a flat hand), and "Scissor" (a fist with the index finger and middle finger extended, forming a V).</p>
+              <p>A player who decides to play rock will beat another player who has chosen scissor ("rock crushes scissors"), but will lose to one who has played paper ("paper covers rock"). A play of paper will lose to a play of scissors ("scissors cuts paper"). If both players choose the same shape, the game is tied and is usually immediately replayed to break the tie.</p>
+              <p>I have developed a simple game of Rock, Paper and Scissor using Python. In this, the player will play against a computer that randomly selects an option. Based on the your selection, You either win, lose or tie with the computer. In this tool, the computer selects a random choice of Rock, Paper and Scissor each time using Python's inbuilt "random" module.</p>
+            </div>
+            <h2>Click on the below button to open Rock, Paper and Scissor game REPL.</h2>            
+            <div class="form-group">
+              <a href="https://repl.it/@vigneshsinha/rock-paper-scissor" target="_blank"><button type="button" class=" btn btn-primary" id="repl-btn">Open Repl</button></a>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+ </div>
+
+</main>
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });
+</script>
+<script type="text/javascript" src="./static/main.bc58148c.js"></script></body>
+{% endblock %}
+
+</html>

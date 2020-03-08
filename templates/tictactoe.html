@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+{% block title %}Tic-Tac-Toe{% endblock %}
+{% block content %}
+
+<body class="">
+ <div class="container" id="check-password">
+   <div class="row">    
+     <div class="col-xs-12 align-center">      
+        <div class="card" id="contact"> 
+        <h1>Tic-Tac-Toe Game</h1>         
+          <div class="card-block pwd-padding">            
+            <div class="col-xs-12">
+              <img src="./static/assets/images/tic-tac-toe.jpg" class="img-responsive auto-margin" alt="tic-tac-toe">
+            </div>
+            <div class="description">
+              <p>Tic-tac-toe, or noughts and crosses, or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.</p>
+              <p>Here I have developed a simple game of classic Tic-Tac-Toe using Python. This game is played by two players X and O. By default, X will start the game.</p>
+              <p>Some interesting facts of game combinations when X starts the game.
+                <ul>
+                  <li>91 distinct positions are won by (X)</li>
+                  <li>44 distinct positions are won by (O)</li>
+                  <li>3 distinct positions are drawn (often called a "cat's game")</li>
+                </ul>
+              </p>
+            </div>
+            <h2>Click on the below button to open Tic-Tac-Toe game REPL.</h2>            
+            <div class="form-group">
+              <a href="https://repl.it/@vigneshsinha/tic-tac-toe" target="_blank"><button type="button" class=" btn btn-primary" id="repl-btn">Open Repl</button></a>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+ </div>
+
+</main>
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });
+</script>
+<script type="text/javascript" src="./static/main.bc58148c.js"></script></body>
+{% endblock %}
+
+</html>
