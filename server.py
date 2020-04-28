@@ -1,13 +1,12 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 import smtplib
 from email.message import EmailMessage
-from string import Template
 import password_checker, webscraping
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():	
+def hello_world():
 	return render_template('index.html')
 
 @app.route('/<string:page>')
@@ -30,7 +29,7 @@ def email_me():
 				smtp.starttls()
 				smtp.login('thalaveriyan64@gmail.com', 'asumathi')
 				smtp.send_message(email)
-			return redirect('/thankyou#contact')
+			return render_template('index.html', msg='success')
 		except:
 			return render_template('error.html')
 
@@ -38,7 +37,7 @@ def email_me():
 def check_password(param = None):
 	if request.method == 'POST':
 		try:
-			passwords = request.form["password"].split()			
+			passwords = request.form["password"].split()
 			pwd_message_list = password_checker.main(passwords)
 			pwd_message = "<br>".join(pwd_message_list)
 			return render_template('passwordchecker.html', text=pwd_message)

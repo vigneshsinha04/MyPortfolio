@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+{% block title %}Webcam Face Detector{% endblock %}
+{% block content %}
+
+<body class="">
+ <div class="container" id="check-password">
+   <div class="row">    
+     <div class="col-xs-12 align-center">      
+        <div class="card" id="contact"> 
+        <h1>Webcam Face Detector</h1>         
+          <div class="card-block pwd-padding">            
+            <div class="col-xs-12">
+              <img src="./static/assets/images/face-detector.jpg" class="img-responsive auto-margin" alt="Face-Detector">
+            </div>
+            <div class="description">
+              <p>I have developed a face detection tool that detects straight face of humans in an Image or a Video. If a face is detected, a green rectangle is formed around the face. This is similar to face detection shapes formed when we open our mobile's front camera. Applications of this feature is very wide and one of them is facial recognition software in mobiles and Desktops.</p>
+              <h4>Technical Information:</h4>
+              <p>This tool was developed using opencv for Python. Opencv module is used for image and video processing. The frontal face is detected by using 'Haarcascade'.</p>
+            </div>
+            <h2 style="margin-bottom: 12.5px;">Click on the below button to download the above tool as a .exe file for windows.</h2>
+            <p>NOTE: Please go through the <b>README.txt</b> file for instructions to run the application.</p>
+            <div class="form-group">
+              <a href="./static/assets/face-detector-tool.rar" target="_blank"><button type="button" class=" btn btn-primary" id="repl-btn">Download EXE file</button></a>
+            </div> 
+          </div>
+        </div>
+     </div>
+   </div>
+ </div>
+
+</main>
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });
+</script>
+<script type="text/javascript" src="./static/main.bc58148c.js"></script></body>
+{% endblock %}
+
+</html>

@@ -80,3 +80,6 @@ td {
 .background-top{
 	top:6% !important;
 }
+.no-border{
+	border:none !important;
+}

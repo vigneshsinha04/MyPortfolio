@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+{% block title %}Library Database{% endblock %}
+{% block content %}
+
+<body class="">
+ <div class="container" id="check-password">
+   <div class="row">    
+     <div class="col-xs-12 align-center">      
+        <div class="card" id="contact"> 
+        <h1>Library Database Application</h1>         
+          <div class="card-block pwd-padding">            
+            <div class="col-xs-12">
+              <img src="./static/assets/images/library-img.jpg" class="img-responsive auto-margin" alt="library-tool">
+            </div>
+            <div class="description">
+              <p>This tool is a desktop based application that can be used in Libraries to store the data of the books present with them. We can see the list of all the books present. We can Add new books, update the details, search the database with custom inputs and even delete the records.</p>
+              <h4>Technical Information:</h4>
+              <p>This desktop application is devloped using Python3. For Graphical User Interface (GUI), I used "Tkinter". For database, I used SQLite3. This application performs basic CRUD operations. First, this tool was a Python Script, later converted to a .exe file.</p>
+            </div>
+            <h2 style="margin-bottom: 12.5px;">Click on the below button to download the above tool as a .exe file for windows.</h2>
+            <p>NOTE: Please go through the <b>README.txt</b> file for instructions to run the application.</p>
+            <div class="form-group">
+              <a href="./static/assets/library-database-tool.rar" target="_blank"><button type="button" class=" btn btn-primary" id="repl-btn">Download EXE file</button></a>
+            </div>            
+          </div>
+        </div>
+     </div>
+   </div>
+ </div>
+
+</main>
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });
+</script>
+<script type="text/javascript" src="./static/main.bc58148c.js"></script></body>
+{% endblock %}
+
+</html>

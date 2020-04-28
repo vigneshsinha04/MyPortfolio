@@ -33,7 +33,7 @@ def curate_hacker_news(links,mega_author):
 	return curate_list
 
 def curated_links():
-	with open('./static/files/links.csv', 'wb') as csvfile:
+	with open('links.csv', 'wb') as csvfile:
 		fieldnames = ['Title', 'Link', 'Author']
 		writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 		writer.writeheader()
@@ -44,6 +44,6 @@ def curated_links():
 
 def view_csv_in_html():
 	curated_links()
-	df = pd.read_csv('./static/files/links.csv')
+	df = pd.read_csv('links.csv')
 	html_csv = df.to_html()
 	return html_csv
